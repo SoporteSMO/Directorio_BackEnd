@@ -4,6 +4,8 @@ import cors from "cors";
 import dotenv from "dotenv";
 dotenv.config({ path: ".env" });
 
+import publicidadRouter from "./routes/publicidadesRouter.js";
+
 const app = express();
 //para poder enviar respuestas tipo json
 app.use(express.json());
@@ -22,6 +24,10 @@ app.use(
         origin: "*",
     })
 );
+
+//Routing
+//Routing para usuarios
+app.use("/publicidad", publicidadRouter);
 
 const port = process.env.BD_PORT || 5000;
 
