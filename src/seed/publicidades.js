@@ -16,6 +16,7 @@ const publicidades = [
         media: "produbanco.mp4",
         fechaInicio: "2024-01-05 00:00:00",
         fechaFin: "2024-01-05 00:00:00",
+        duracion:21000
     },
 ];
 

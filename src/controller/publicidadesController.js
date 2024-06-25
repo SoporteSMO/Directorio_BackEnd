@@ -1,7 +1,9 @@
 import Publicidades from "../models/Publicidades.js";
 const listarPublicidades = async (req, res) => {
     try {
-        const publicidades = await Publicidades.findAll();
+        const publicidades = await Publicidades.findAll({
+            where: { estado: true },
+        });
         console.log(publicidades);
         if (publicidades.length === 0) {
             const error = new Error("No tienes publicidades registradas");
