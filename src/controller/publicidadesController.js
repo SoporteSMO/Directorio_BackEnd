@@ -1,4 +1,4 @@
-import Publicidades from "../models/Publicidades.js";
+import { Publicidades } from "../models/index.js";
 const listarPublicidades = async (req, res) => {
     try {
         const publicidades = await Publicidades.findAll({
