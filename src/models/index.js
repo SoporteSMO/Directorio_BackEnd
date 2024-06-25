@@ -1,6 +1,31 @@
+import Categorias from "./Categorias.js";
+import Plantas from "./Plantas.js";
+import Locales from "./Locales.js";
 import Publicidades from "./Publicidades.js";
+import Vias from "./Vias.js";
 
+//Relacion entre Categorias y Locales
+Categorias.hasMany(Locales, {
+    foreignKey: { name: "id_Categoria" },
+    onDelete: "SET NULL",
+    onUpdate: "SET NULL ",
+});
+Locales.belongsTo(Categorias, {
+    foreignKey: { name: "id_Categoria" },
+    onDelete: "SET NULL",
+    onUpdate: "SET NULL ",
+});
 
-export{
-    Publicidades
-}
+//Relacion entre Plantas y Locales
+Plantas.hasMany(Locales, {
+    foreignKey: { name: "id_Planta" },
+    onDelete: "SET NULL",
+    onUpdate: "SET NULL ",
+});
+Locales.belongsTo(Plantas, {
+    foreignKey: { name: "id_Planta" },
+    onDelete: "SET NULL",
+    onUpdate: "SET NULL ",
+});
+
+export { Categorias, Plantas, Locales, Publicidades, Vias };
