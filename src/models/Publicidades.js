@@ -12,6 +12,11 @@ const Publicidades = db.define("publicidades", {
         allowNull: false,
         require: true,
     },
+    duracion: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        require: true,
+    },
     fechaInicio: {
         type: DataTypes.DATE,
         require: true,
