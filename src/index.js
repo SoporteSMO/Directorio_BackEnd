@@ -9,6 +9,7 @@ import publicidadRouter from "./routes/publicidadesRouter.js";
 const app = express();
 //para poder enviar respuestas tipo json
 app.use(express.json());
+app.use(express.static("./src/public"));
 
 //conexion BDD
 try {
