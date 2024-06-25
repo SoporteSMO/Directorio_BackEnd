@@ -1,0 +1,32 @@
+{
+  "name": "directorio_backend",
+  "version": "1.0.0",
+  "description": "API del Directorio",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js ",
+    "start": "node index.js",
+    "clean": "rm -rf dist/",
+    "build": "npm run clean && mkdir dist && babel src/ -s -d dist",
+    "production": "npm run build && node dist/",
+    "db:import": "node ./src/seed/seeder.js -i",
+    "db:delete": "node ./src/seed/seeder.js -d"
+  },
+  "keywords": [
+    "NodeJs",
+    "Express"
+  ],
+  "author": "Bryan Gallo",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mysql2": "^3.10.1",
+    "sequelize": "^6.37.3"
+  }
+}
