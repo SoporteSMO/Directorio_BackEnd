@@ -5,6 +5,7 @@ const listarVias = async (req, res) => {
         const vias = await Vias.findAll({
             where: { estado: true },
         });
+        console.log(vias);
         if (vias.length === 0) {
             const error = new Error("No tienes vias registradas");
             return res.status(404).json({ msg: error.message });
