@@ -1,7 +1,14 @@
 import { exit } from "node:process";
-import Publicidades from "../models/Publicidades.js";
+import {
+    Categorias,
+    Plantas,
+    Locales,
+    Publicidades,
+    Vias,
+} from "../models/index.js";
 
 import { publicidades } from "./publicidades.js";
+import { vias } from "./vias.js";
 
 import db from "../config/db.js";
 
@@ -10,12 +17,11 @@ const importarDatos = async () => {
         await db.authenticate();
         await db.sync();
         await Publicidades.bulkCreate(publicidades);
+        await Vias.bulkCreate(vias);
         console.log("Datos Importados correctamente");
 
         exit(0);
     } catch (error) {
-        console.log();
-
         exit(1);
     }
 };
