@@ -19,11 +19,9 @@ const Publicidades = db.define("publicidades", {
     },
     fechaInicio: {
         type: DataTypes.DATE,
-        require: true,
     },
     fechaFin: {
         type: DataTypes.DATE,
-        require: true,
     },
     estado: {
         type: DataTypes.BOOLEAN,

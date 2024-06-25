@@ -10,7 +10,7 @@ const listarPublicidades = async (req, res) => {
         return res.status(200).json(publicidades);
     } catch (error) {
         console.error(error);
-        res.status(500).json({ error: "Error al obtener las capacitaciones" });
+        res.status(404).json({ error: "Error al obtener las capacitaciones" });
     }
 };
 
