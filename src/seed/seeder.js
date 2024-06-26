@@ -10,6 +10,8 @@ import {
 import { publicidades } from "./publicidades.js";
 import { vias } from "./vias.js";
 import { categorias } from "./categorias.js";
+import { plantas } from "./plantas.js";
+import { locales } from "./locales.js";
 
 import db from "../config/db.js";
 
@@ -20,6 +22,8 @@ const importarDatos = async () => {
         await Publicidades.bulkCreate(publicidades);
         await Vias.bulkCreate(vias);
         await Categorias.bulkCreate(categorias);
+        await Plantas.bulkCreate(plantas);
+        await Locales.bulkCreate(locales);
         console.log("Datos Importados correctamente");
 
         exit(0);
