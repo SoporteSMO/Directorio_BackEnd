@@ -6,7 +6,7 @@ const listarPlantas = async (req, res) => {
         });
         console.log(plantas);
         if (plantas.length === 0) {
-            const error = new Error("No tienes publicidades registradas");
+            const error = new Error("No tienes plantas registradas");
             return res.status(404).json({ msg: error.message });
         }
         return res.status(200).json(plantas);
