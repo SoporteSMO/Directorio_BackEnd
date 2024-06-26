@@ -29,9 +29,9 @@ app.use(
 
 //Routing
 //Routing para publicidad
-app.use("/publicidad", publicidadRouter);
+app.use("/api/publicidad", publicidadRouter);
 //Routing para vias
-app.use("/via", viasRouter);
+app.use("/api/vias", viasRouter);
 
 const port = process.env.BD_PORT || 5000;
 
