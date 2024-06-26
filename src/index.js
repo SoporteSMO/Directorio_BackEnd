@@ -6,6 +6,7 @@ dotenv.config({ path: ".env" });
 
 import publicidadRouter from "./routes/publicidadesRouter.js";
 import viasRouter from "./routes/viasRouter.js";
+import categoriasRouter from "./routes/categoriasRouter.js";
 
 const app = express();
 //para poder enviar respuestas tipo json
@@ -32,6 +33,12 @@ app.use(
 app.use("/api/publicidad", publicidadRouter);
 //Routing para vias
 app.use("/api/vias", viasRouter);
+//Routing para categorias
+app.use("/api/categorias", categoriasRouter);
+//Routing para plantas
+app.use("/api/plantas", viasRouter);
+//Routing para locales
+app.use("/api/locales", viasRouter);
 
 const port = process.env.BD_PORT || 5000;
 
