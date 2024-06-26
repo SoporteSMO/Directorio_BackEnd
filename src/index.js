@@ -7,6 +7,7 @@ dotenv.config({ path: ".env" });
 import publicidadRouter from "./routes/publicidadesRouter.js";
 import viasRouter from "./routes/viasRouter.js";
 import categoriasRouter from "./routes/categoriasRouter.js";
+import plantasRouter from "./routes/plantasRouter.js";
 
 const app = express();
 //para poder enviar respuestas tipo json
@@ -36,7 +37,7 @@ app.use("/api/vias", viasRouter);
 //Routing para categorias
 app.use("/api/categorias", categoriasRouter);
 //Routing para plantas
-app.use("/api/plantas", viasRouter);
+app.use("/api/plantas", plantasRouter);
 //Routing para locales
 app.use("/api/locales", viasRouter);
 
