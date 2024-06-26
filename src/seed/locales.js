@@ -1,18 +1,18 @@
 const locales = [
     {
-        nombre: "PANDORA",
-        logo: "auto.jpg",
-        fachada: "auto.jpg",
+        nombre: "ACIUM",
+        logo: "acium.png",
+        fachada: "acium.png",
         descripcion:
-            "PANDORA es una marca reconocida de joyas fundada en Dinamarca, que cuenta actualmente con presencia en más de 100 países. Dentro de sus colecciones contemporáneas se encuentran dijes, pulseras, cadenas, anillos y accesorios especiales para crear un estilo único y propio para cada una de las personas que nos visitan.",
+            "ACIUM es una marca reconocida de joyas fundada en Dinamarca, que cuenta actualmente con presencia en más de 100 países. Dentro de sus colecciones contemporáneas se encuentran dijes, pulseras, cadenas, anillos y accesorios especiales para crear un estilo único y propio para cada una de las personas que nos visitan.",
         numLocal: "L163",
         id_Categoria: 1,
         id_Planta: 1,
     },
     {
         nombre: "EXPLORER",
-        logo: "auto.jpg",
-        fachada: "auto.jpg",
+        logo: "explorer.png",
+        fachada: "explorer.png",
         descripcion:
             "EXPLORER es una marca reconocida de joyas fundada en Dinamarca, que cuenta actualmente con presencia en más de 100 países. Dentro de sus colecciones contemporáneas se encuentran dijes, pulseras, cadenas, anillos y accesorios especiales para crear un estilo único y propio para cada una de las personas que nos visitan.",
         numLocal: "L163",
@@ -21,8 +21,8 @@ const locales = [
     },
     {
         nombre: "FOSSIL",
-        logo: "auto.jpg",
-        fachada: "auto.jpg",
+        logo: "fossil.png",
+        fachada: "fossil.png",
         descripcion:
             "FOSSIL es una marca reconocida de joyas fundada en Dinamarca, que cuenta actualmente con presencia en más de 100 países. Dentro de sus colecciones contemporáneas se encuentran dijes, pulseras, cadenas, anillos y accesorios especiales para crear un estilo único y propio para cada una de las personas que nos visitan.",
         numLocal: "L163",
@@ -31,8 +31,8 @@ const locales = [
     },
     {
         nombre: "BANCO PICHINCHA",
-        logo: "auto.jpg",
-        fachada: "auto.jpg",
+        logo: "bancoPichincha.png",
+        fachada: "bancoPichincha.png",
         descripcion:
             "BANCO PICHINCHA es una marca reconocida de joyas fundada en Dinamarca, que cuenta actualmente con presencia en más de 100 países. Dentro de sus colecciones contemporáneas se encuentran dijes, pulseras, cadenas, anillos y accesorios especiales para crear un estilo único y propio para cada una de las personas que nos visitan.",
         numLocal: "L163",
@@ -41,8 +41,8 @@ const locales = [
     },
     {
         nombre: "FYBECA",
-        logo: "auto.jpg",
-        fachada: "auto.jpg",
+        logo: "fybeca.png",
+        fachada: "fybeca.png",
         descripcion:
             "FYBECA es una marca reconocida de joyas fundada en Dinamarca, que cuenta actualmente con presencia en más de 100 países. Dentro de sus colecciones contemporáneas se encuentran dijes, pulseras, cadenas, anillos y accesorios especiales para crear un estilo único y propio para cada una de las personas que nos visitan.",
         numLocal: "L163",
