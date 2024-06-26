@@ -3,6 +3,7 @@ import Plantas from "./Plantas.js";
 import Locales from "./Locales.js";
 import Publicidades from "./Publicidades.js";
 import Vias from "./Vias.js";
+import Eventos from "./Eventos.js";
 
 //Relacion entre Categorias y Locales
 Categorias.hasMany(Locales, {
@@ -28,4 +29,4 @@ Locales.belongsTo(Plantas, {
     onUpdate: "SET NULL ",
 });
 
-export { Categorias, Plantas, Locales, Publicidades, Vias };
+export { Categorias, Plantas, Locales, Publicidades, Vias, Eventos };

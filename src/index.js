@@ -9,6 +9,7 @@ import viasRouter from "./routes/viasRouter.js";
 import categoriasRouter from "./routes/categoriasRouter.js";
 import plantasRouter from "./routes/plantasRouter.js";
 import localesRouter from "./routes/localesRouter.js";
+import eventosRouter from "./routes/eventosRouter.js";
 
 const app = express();
 //para poder enviar respuestas tipo json
@@ -41,6 +42,8 @@ app.use("/api/categorias", categoriasRouter);
 app.use("/api/plantas", plantasRouter);
 //Routing para locales
 app.use("/api/locales", localesRouter);
+//Routing para eventos
+app.use("/api/eventos", eventosRouter);
 
 const port = process.env.BD_PORT || 5000;
 
