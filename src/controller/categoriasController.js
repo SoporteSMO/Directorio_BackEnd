@@ -8,6 +8,7 @@ const listarCategorias = async (req, res) => {
             const error = new Error("No tienes categorias registradas");
             return res.status(404).json({ msg: error.message });
         }
+        return res.status(200).json(categorias);
     } catch (error) {
         console.error(error);
         res.status(404).json({ error: "Error al obtener las categorias" });

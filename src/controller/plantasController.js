@@ -2,7 +2,6 @@ import { Plantas } from "../models/index.js";
 const listarPlantas = async (req, res) => {
     try {
         const plantas = await Plantas.findAll({
-            where: { estado: true },
         });
         console.log(plantas);
         if (plantas.length === 0) {
