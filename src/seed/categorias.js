@@ -9,10 +9,10 @@ const categorias = [
         nombre: "RELOJERIAS",
     },
     {
-        nombre: "SALUD",
+        nombre: "ENTIDADES BANCARIAS",
     },
     {
-        nombre: "ENTIDADES BANCARIAS",
+        nombre: "SALUD",
     },
     {
         nombre: "CAFETERIAS",
