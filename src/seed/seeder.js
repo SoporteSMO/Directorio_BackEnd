@@ -6,6 +6,8 @@ import {
     Publicidades,
     Vias,
     Eventos,
+    Multicines,
+    Teatro,
 } from "../models/index.js";
 
 import { publicidades } from "./publicidades.js";
@@ -14,6 +16,8 @@ import { categorias } from "./categorias.js";
 import { plantas } from "./plantas.js";
 import { locales } from "./locales.js";
 import { eventos } from "./eventos.js";
+import { multicines } from "./multicines.js";
+import { teatro } from "./teatro.js";
 
 import db from "../config/db.js";
 
@@ -25,8 +29,10 @@ const importarDatos = async () => {
         await Vias.bulkCreate(vias);
         await Categorias.bulkCreate(categorias);
         await Plantas.bulkCreate(plantas);
-        await Locales.bulkCreate(locales);
         await Eventos.bulkCreate(eventos);
+        await Multicines.bulkCreate(multicines);
+        await Teatro.bulkCreate(teatro);
+        await Locales.bulkCreate(locales);
         console.log("Datos Importados correctamente");
 
         exit(0);
