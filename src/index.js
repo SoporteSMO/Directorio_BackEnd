@@ -11,6 +11,7 @@ import plantasRouter from "./routes/plantasRouter.js";
 import localesRouter from "./routes/localesRouter.js";
 import eventosRouter from "./routes/eventosRouter.js";
 import multicinesRouter from "./routes/multicinesRouter.js";
+import teatroRouter from "./routes/teatrosRouter.js";
 
 const app = express();
 //para poder enviar respuestas tipo json
@@ -48,7 +49,7 @@ app.use("/api/eventos", eventosRouter);
 //Routing para multicines
 app.use("/api/multicines", multicinesRouter);
 //Routing para eventos
-app.use("/api/teatro", eventosRouter);
+app.use("/api/teatro", teatroRouter);
 
 const port = process.env.BD_PORT || 5000;
 
