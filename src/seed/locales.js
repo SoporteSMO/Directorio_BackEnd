@@ -2,7 +2,7 @@ const locales = [
     {
         nombre: "ACIUM",
         logo: "acium.png",
-        fachada: "acium.png",
+        fachada: "acium.jpg",
         descripcion:
             "ACIUM es una marca reconocida de joyas fundada en Dinamarca, que cuenta actualmente con presencia en más de 100 países. Dentro de sus colecciones contemporáneas se encuentran dijes, pulseras, cadenas, anillos y accesorios especiales para crear un estilo único y propio para cada una de las personas que nos visitan.",
         numLocal: "L163",
@@ -12,7 +12,7 @@ const locales = [
     {
         nombre: "EXPLORER",
         logo: "explorer.png",
-        fachada: "explorer.png",
+        fachada: "acium.jpg",
         descripcion:
             "EXPLORER es una marca reconocida de joyas fundada en Dinamarca, que cuenta actualmente con presencia en más de 100 países. Dentro de sus colecciones contemporáneas se encuentran dijes, pulseras, cadenas, anillos y accesorios especiales para crear un estilo único y propio para cada una de las personas que nos visitan.",
         numLocal: "L163",
