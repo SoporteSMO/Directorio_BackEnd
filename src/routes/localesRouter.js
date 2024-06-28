@@ -1,8 +1,8 @@
 import express from "express";
-import { listarLocales } from "../controller/localesController.js";
+import { listarLocalesOrdenAlfabetico } from "../controller/localesController.js";
 
 const localesRouter = express.Router();
 
-localesRouter.get("/", listarLocales);
+localesRouter.get("/", listarLocalesOrdenAlfabetico);
 
-export default localesRouter;
+export default listarLocalesOrdenAlfabetico;

@@ -1,8 +1,9 @@
 import { Locales } from "../models/index.js";
-const listarLocales = async (req, res) => {
+const listarLocalesOrdenAlfabetico = async (req, res) => {
     try {
         const locales = await Locales.findAll({
             where: { estado: true },
+            order: [["nombre", "ASC"]],
         });
         console.log(locales);
         if (locales.length === 0) {
@@ -16,4 +17,4 @@ const listarLocales = async (req, res) => {
     }
 };
 
-export { listarLocales };
+export { listarLocalesOrdenAlfabetico };
