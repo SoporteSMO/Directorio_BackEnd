@@ -1,7 +1,12 @@
-import { Locales } from "../models/index.js";
+import { Locales, Plantas } from "../models/index.js";
 const listarLocalesOrdenAlfabetico = async (req, res) => {
     try {
         const locales = await Locales.findAll({
+            include: [
+                {
+                    model: Plantas,
+                },
+            ],
             where: { estado: true },
             order: [["nombre", "ASC"]],
         });
